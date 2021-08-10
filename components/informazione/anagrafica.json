@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_informazione_anagraficas",
+  "info": {
+    "name": "Anagraficavenditore",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Datadinascita": {
+      "type": "date",
+      "required": true
+    },
+    "Neoassunto": {
+      "type": "boolean",
+      "required": true
+    },
+    "Foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Luogodinascita": {
+      "type": "string",
+      "required": true
+    },
+    "Residenza": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

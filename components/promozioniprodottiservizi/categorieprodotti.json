@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_promozioniprodottiservizi_categorieprodottis",
+  "info": {
+    "name": "Categorieprodotti",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "CATEGORIA": {
+      "type": "enumeration",
+      "enum": [
+        "WEB",
+        "APP",
+        "ADVERTISING",
+        "SERVIZI"
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_promozioniprodottiservizi_promozionis",
+  "info": {
+    "name": "PROMOZIONI",
+    "icon": "euro-sign"
+  },
+  "options": {},
+  "attributes": {
+    "TITOLO": {
+      "type": "string"
+    },
+    "DESCRIZIONE": {
+      "type": "richtext"
+    },
+    "VALIDITADAL": {
+      "type": "date",
+      "required": true
+    },
+    "VALIDITAAL": {
+      "type": "date",
+      "required": true
+    },
+    "PREZZOLISTINO": {
+      "type": "biginteger",
+      "required": true
+    },
+    "SCONTO": {
+      "type": "biginteger",
+      "required": true
+    },
+    "FOTO": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

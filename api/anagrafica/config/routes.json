@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/anagrafica",
+      "handler": "anagrafica.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/anagrafica",
+      "handler": "anagrafica.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/anagrafica",
+      "handler": "anagrafica.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "collectionName": "components_dettaglibase_informaziones",
+  "info": {
+    "name": "Anagraficacliente",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Insegna": {
+      "type": "string"
+    },
+    "Servizivenduti": {
+      "type": "text",
+      "required": true
+    },
+    "Ragionesociale": {
+      "type": "string"
+    },
+    "Media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Civico": {
+      "type": "integer"
+    },
+    "Tipocliente": {
+      "type": "enumeration",
+      "enum": [
+        "Nuovo",
+        "Core",
+        "Esistente"
+      ],
+      "required": true
+    },
+    "Dataacquisizione": {
+      "type": "date",
+      "required": true
+    },
+    "Localita": {
+      "type": "string"
+    },
+    "Via": {
+      "type": "string"
+    },
+    "Descrizione": {
+      "type": "richtext",
+      "required": true
+    },
+    "Valorevendita": {
+      "type": "biginteger",
+      "required": true
+    },
+    "CAP": {
+      "type": "integer"
+    },
+    "Contrattoannuale": {
+      "type": "boolean",
+      "required": true
+    },
+    "codicefatturazioneelettronica": {
+      "type": "string"
+    },
+    "PEC": {
+      "type": "email",
+      "required": true
+    },
+    "Numerofattureemesse": {
+      "required": true,
+      "type": "biginteger"
+    }
+  }
+}

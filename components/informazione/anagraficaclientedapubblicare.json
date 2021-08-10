@@ -1,0 +1,79 @@
+{
+  "collectionName": "components_informazione_anagraficaclientedapubblicares",
+  "info": {
+    "name": "Anagraficaclientedapubblicare",
+    "icon": "store-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "INSEGNA": {
+      "type": "text",
+      "required": true
+    },
+    "DESCRIZIONEATTIVITA": {
+      "type": "richtext",
+      "required": true
+    },
+    "ATTIVODAL": {
+      "type": "date",
+      "required": true
+    },
+    "NONATTIVODAL": {
+      "type": "date"
+    },
+    "FOTOVIDEO": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "PRESENTESUISERVIZI": {
+      "type": "enumeration",
+      "enum": [
+        "SITOWEB",
+        "PORTALEWEB",
+        "APP",
+        "SITOWEBEPORTALE",
+        "SITOWEBEAPP",
+        "PORTALEWEBEAPP",
+        "TUTTO"
+      ],
+      "default": "TUTTO"
+    },
+    "Indirizzositoweb": {
+      "type": "string"
+    },
+    "Indirizzosocial": {
+      "type": "component",
+      "repeatable": true,
+      "component": "indirizziweb.indirizzosocial"
+    },
+    "indirizzoportale": {
+      "type": "component",
+      "repeatable": true,
+      "component": "indirizziweb.indirizzoportale"
+    },
+    "PROMOZIONI": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promozioniprodottiservizi.promozioni"
+    },
+    "PRODOTTI": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promozioniprodottiservizi.promozioni"
+    },
+    "SERVIZI": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promozioniprodottiservizi.promozioni"
+    }
+  }
+}

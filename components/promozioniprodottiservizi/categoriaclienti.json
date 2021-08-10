@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_promozioniprodottiservizi_categoriaclientis",
+  "info": {
+    "name": "Categoriaclienti",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CATEGORIA": {
+      "type": "enumeration",
+      "enum": [
+        "Abbigliamento",
+        "Estetica",
+        "Alimentari",
+        "Altro",
+        "Arredamento",
+        "Salute",
+        "Ottica",
+        "Profumeria",
+        "Ristorazione",
+        "Fiori",
+        "Somministrazione",
+        "Tabacchi",
+        "Edicole"
+      ]
+    }
+  }
+}

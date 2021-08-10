@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "futureproducts",
+  "info": {
+    "name": "Futureproduct",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "PRODOTTIDALANCIARE": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promozioniprodottiservizi.promozioni",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "NOME": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "CATEGORIA": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "promozioniprodottiservizi.categorieprodotti"
+    }
+  }
+}

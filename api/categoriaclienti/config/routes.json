@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/categoriaclienti",
+      "handler": "categoriaclienti.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/categoriaclienti",
+      "handler": "categoriaclienti.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/categoriaclienti",
+      "handler": "categoriaclienti.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
