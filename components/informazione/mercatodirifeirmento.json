@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_informazione_mercatodirifeirmentos",
+  "info": {
+    "name": "Mercatodirifeirmento",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "NOME": {
+      "type": "enumeration",
+      "enum": [
+        "CLIENTIPOTENZIALI",
+        "CLIENTIINCONVERSIONE",
+        "CLIENTIAPPENACONVERTITI",
+        "CLIENTIACQUISITI",
+        "CLIENTIESISTENTI",
+        "CLIENTIVECCHIADATA",
+        "CLIENTIVIP",
+        "CLIENTILOWLEVEL"
+      ]
+    }
+  }
+}

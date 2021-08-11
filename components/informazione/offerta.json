@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_informazione_offertas",
+  "info": {
+    "name": "Offerta",
+    "icon": "suitcase"
+  },
+  "options": {},
+  "attributes": {
+    "NOME": {
+      "type": "string"
+    },
+    "DESCRIZIONE": {
+      "type": "richtext"
+    },
+    "TIPO": {
+      "type": "enumeration",
+      "enum": [
+        "SERVIZIO",
+        "PRODOTTO",
+        "MANUTENZIONE",
+        "INTERVENTO"
+      ]
+    },
+    "VALORELISTINO": {
+      "type": "biginteger"
+    },
+    "DURATAMIN": {
+      "type": "biginteger"
+    },
+    "DURATAMAX": {
+      "type": "biginteger"
+    }
+  }
+}

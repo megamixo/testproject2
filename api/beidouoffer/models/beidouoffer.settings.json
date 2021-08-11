@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "customers",
+  "collectionName": "beidouoffers",
   "info": {
-    "name": "Customer",
+    "name": "Offer",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "TITOLARE": {
+    "NOMEOFFERTA": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -24,48 +24,58 @@
       },
       "type": "string"
     },
-    "salesman": {
-      "model": "salesman"
-    },
-    "CATEGORIA": {
-      "type": "component",
-      "repeatable": false,
+    "ATTIVADAL": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "promozioniprodottiservizi.categoriaclienti"
+      "type": "date"
     },
-    "ANAGRAFICA": {
-      "type": "component",
-      "repeatable": false,
+    "NONPIUATTIVADAL": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "informazione.informazione"
+      "type": "date"
     },
-    "INFORMAZIONI": {
-      "type": "component",
-      "repeatable": false,
+    "DESCRIZIONEOFFERTA": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "informazione.anagraficaclientedapubblicare"
+      "type": "richtext"
     },
-    "AZIENDA": {
+    "ELEMENTO": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "informazione.aziendadiriferimento"
+      "component": "informazione.offerta"
+    },
+    "existingproductservice": {
+      "model": "existingproducts"
+    },
+    "futureproductservice": {
+      "model": "futureproducts"
+    },
+    "interimproductservice": {
+      "model": "interimproducts"
+    },
+    "MERCATO": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "informazione.mercatodirifeirmento"
     }
   }
 }

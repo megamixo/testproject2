@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/beidouoffers",
+      "handler": "beidouoffer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/beidouoffers/count",
+      "handler": "beidouoffer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/beidouoffers/:id",
+      "handler": "beidouoffer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/beidouoffers",
+      "handler": "beidouoffer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/beidouoffers/:id",
+      "handler": "beidouoffer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/beidouoffers/:id",
+      "handler": "beidouoffer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

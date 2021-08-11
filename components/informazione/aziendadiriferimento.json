@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_informazione_aziendadiriferimentos",
+  "info": {
+    "name": "Aziendadiriferimento",
+    "icon": "box",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "AZIENDAOWNER": {
+      "type": "string"
+    }
+  }
+}
